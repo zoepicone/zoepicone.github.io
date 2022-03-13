@@ -20,7 +20,13 @@ h1, h2 {
   display:flex;
   justify-content:center;
   align-items:center;
-  min-height:100vh;
+  
+}
+
+@media screen and (min-width: 600px) {
+  .flex-container {
+    min-height:100vh;
+  }
 }
 
 .flex-child {
@@ -28,7 +34,7 @@ h1, h2 {
 }
 
 .flex-child:first-child {
-  width:200px;
+  width:20vw;
   margin-left:5vw;
   margin-right:5vw;
   text-align:right;
