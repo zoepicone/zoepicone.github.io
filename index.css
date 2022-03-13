@@ -8,16 +8,16 @@ body {
 
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
-  margin:0;
-  padding:0;
+  margin:0px;
+  padding:0px;
 }
 
 h1 {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size:60;
+  font-size:50px;
   font-weight: 100;
-  margin:0;
-  padding:0;
+  margin:0px;
+  padding:0px;
 }
 
 .flex-container {
@@ -29,11 +29,25 @@ h1 {
   min-height:-webkit-fill-available;
 }
 
+.flex-child {
+  flex:1;
+  margin-left:3vw;
+  margin-right:3vw;
+}
+
+.flex-child:first-child {
+  text-align:right;
+}
+
+.flex-child:last-child {
+  flex-grow:1.7;
+}
+
 /* mobile only */
 @media screen and (max-width: 650px) {
   h1 {
-    font-size:40;
-    margin:10;
+    font-size:40px;
+    margin:10px;
     text-align:center;
   }
   
@@ -41,35 +55,17 @@ h1 {
     flex-direction:column;
   }
   
-  .flex-child:last-child {
-    flex-grow:1.7;
-    margin-left:5vw;
+  .flex-child:first-child {
+    text-align:center;
   }
 }
 
 /* desktop only */
 @media screen and (min-width:650px) {
-  .flex-container {
-    
-  }
-
   .flex-child:first-child {
     width:20vw;
-    text-align:right;
   }
 }
 
-.flex-child {
-  flex:1;
-}
 
-.flex-child:first-child {
-  margin-left:5vw;
-  margin-right:5vw;
-}
-
-.flex-child:last-child {
-  flex-grow:1.7;
-  margin-right:5vw;
-}
 
