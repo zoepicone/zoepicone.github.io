@@ -8,9 +8,9 @@ body {
   padding:0;
 }
 
-h1, h2 {
+h1 {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size:60;
+  font-size:4.4vw;
   font-weight: 100;
   margin:0;
   padding:0;
@@ -20,13 +20,11 @@ h1, h2 {
   display:flex;
   justify-content:center;
   align-items:center;
-  
+  min-height:100vh;
 }
 
-@media screen and (min-width: 600px) {
-  .flex-container {
-    min-height:100vh;
-  }
+@media screen and (max-width: 600px) {
+
 }
 
 .flex-child {
