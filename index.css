@@ -20,6 +20,10 @@ h1 {
   padding:0px;
 }
 
+a:link, a:visited {
+  color:#516aec;
+}
+
 .flex-container {
   display:flex;
   align-items:center;
