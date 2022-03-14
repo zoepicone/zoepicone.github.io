@@ -12,12 +12,21 @@ body {
   padding:0px;
 }
 
-h1 {
+h1, h2 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size:50px;
-  font-weight: 100;
+  font-weight: 200;
   margin:0px;
   padding:0px;
+}
+
+h2 {
+  font-size:30px;
+  padding-top:20px;
+}
+
+img {
+  vertical-align: middle;
 }
 
 a:link, a:visited {
