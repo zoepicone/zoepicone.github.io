@@ -1,3 +1,5 @@
+
+
 html {
   height:-webkit-fill-available; /* fix for issue on iOS */
 }
@@ -7,6 +9,7 @@ body {
   color:#2a252a;
 
   font-family: 'IBM Plex Sans', sans-serif;
+  src: local('IBM Plex Sans'), url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;400&display=swap');
   font-weight: 400;
   margin:0px;
   padding:0px;
@@ -14,6 +17,7 @@ body {
 
 h1, h2 {
   font-family: 'IBM Plex Sans', sans-serif;
+  src: local('IBM Plex Sans'), url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;400&display=swap');
   font-size:50px;
   font-weight: 100;
   margin:0px;
