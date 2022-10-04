@@ -2,7 +2,7 @@ html {
     height:-webkit-fill-available; /* fix for issue on iOS */
     line-height: 1.5;
     font-family: 'IBM Plex Sans', sans-serif;  
-    src: local('IBM Plex Sans'), url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;400&display=swap');
+    src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;400&display=swap');
     font-weight: 400;
     font-size: 20px;
     color: #2a252a;
