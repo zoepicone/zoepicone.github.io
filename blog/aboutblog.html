@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Zoe Picone" />
+  <title>A bit about this blog</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="/Users/xildelphi/projects/zoedelphi.github.io/blog/style.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">A bit about this blog</h1>
+<p class="author">Zoe Picone</p>
+<p class="date">04-10-2022</p>
+</header>
+<p>I’m bogged down with work at the moment and can’t dedicate the time
+to writing anything of note, so I’ll just talk a bit about how I made
+this blog.</p>
+<p>I wrote a script to generate the pages and table of contents, which
+you can see <a href="https://github.com/zoedelphi/blog">here</a>. The
+pages are generated using Pandoc Markdown, which is one of the reasons I
+decided to roll my own script - the tables especially are nicer to use
+than any other Markdown dialect I’ve seen.</p>
+<p>Other than <em>pandoc-ruby</em>, which provides pandoc bindings, the
+only other library used was <em>date</em> from the Ruby standard
+library. A large portion of the time spent working on this script was
+figuring out how to sort by date for the table of contents - currently I
+parse the exact line of the file that contains a date value and use this
+to sort an array of files. The script is rather inefficient though, due
+to my use of IO.readline() which was the most readable option but also
+reads the entire file when I only need two lines from it.</p>
+<p>In conclusion, this was a fun experiment and hopefully will be a good
+addition to my website.</p>
+<p><a href="../blog.html">Back</a></p>
+</body>
+</html>
