@@ -40,7 +40,6 @@ a:link, a:visited {
   justify-content:center;
   
   min-height:100vh;
-  min-height:-webkit-fill-available;
 }
 
 .flex-child {
